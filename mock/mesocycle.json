@@ -1,0 +1,54 @@
+[
+	{
+		"week": 1,
+		"wendlerSets": true,
+		"warmUpOne": 0.4,
+		"warmUpTwo": 0.5,
+		"warmUpThree": 0.6,
+		"setOne": 0.65,
+		"setTwo": 0.75,
+		"setThree": 0.85,
+		"repOne": "5",
+		"repTwo": "5",
+		"repThree": "5+"
+	},
+	{
+		"week": 2,
+		"wendlerSets": true,
+		"warmUpOne": 0.4,
+		"warmUpTwo": 0.5,
+		"warmUpThree": 0.6,
+		"setOne": 0.7,
+		"setTwo": 0.8,
+		"setThree": 0.9,
+		"repOne": "3",
+		"repTwo": "3",
+		"repThree": "3+"
+	},
+	{
+		"week": 3,
+		"wendlerSets": true,
+		"warmUpOne": 0.4,
+		"warmUpTwo": 0.5,
+		"warmUpThree": 0.6,
+		"setOne": 0.75,
+		"setTwo": 0.85,
+		"setThree": 0.95,
+		"repOne": "5",
+		"repTwo": "3",
+		"repThree": "1+"
+	},
+	{
+		"week": 4,
+		"wendlerSets": false,
+		"warmUpOne": 0.4,
+		"warmUpTwo": 0.5,
+		"warmUpThree": 0.6,
+		"setOne": 0,
+		"setTwo": 0,
+		"setThree": 0,
+		"repOne": "0",
+		"repTwo": "0",
+		"repThree": "0+"
+	}
+]

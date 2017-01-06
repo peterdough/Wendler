@@ -1,0 +1,55 @@
+<div ng-repeat="wave in waves">
+	<span class="text-primary"><h3>Week {{wave.week}}</h3></span>
+	<div class="row">
+		<div class="col-md-12">
+			<table class="table table-bordered">
+				<thead>
+					<tr>
+						<th class="col-md-3">Overhead Press</th>
+						<th class="col-md-3">Deadlift</th>
+						<th class="col-md-3">Bench Press</th>
+						<th class="col-md-3">Squat</th>
+					</tr>
+				</thead>
+				<tbody>
+					<tr>
+						<td>{{calcSets("5", maxes.overheadPress, wave.warmUpOne)}}</td>
+						<td>{{calcSets("5", maxes.deadlift, wave.warmUpOne)}}</td>
+						<td>{{calcSets("5", maxes.benchPress, wave.warmUpOne)}}</td>
+						<td>{{calcSets("5", maxes.squat, wave.warmUpOne)}}</td>
+					</tr>
+					<tr>
+						<td>{{calcSets("5", maxes.overheadPress, wave.warmUpTwo)}}</td>
+						<td>{{calcSets("5", maxes.deadlift, wave.warmUpTwo)}}</td>
+						<td>{{calcSets("5", maxes.benchPress, wave.warmUpTwo)}}</td>
+						<td>{{calcSets("5", maxes.squat, wave.warmUpTwo)}}</td>
+					</tr>
+					<tr>
+						<td>{{calcSets("3", maxes.overheadPress, wave.warmUpThree)}}</td>
+						<td>{{calcSets("3", maxes.deadlift, wave.warmUpThree)}}</td>
+						<td>{{calcSets("3", maxes.benchPress, wave.warmUpThree)}}</td>
+						<td>{{calcSets("3", maxes.squat, wave.warmUpThree)}}</td>
+					</tr>
+					<tr ng-show="wave.wendlerSets">
+						<td>{{calcSets(wave.repOne, maxes.overheadPress, wave.setOne)}}</td>
+						<td>{{calcSets(wave.repOne, maxes.deadlift, wave.setOne)}}</td>
+						<td>{{calcSets(wave.repOne, maxes.benchPress, wave.setOne)}}</td>
+						<td>{{calcSets(wave.repOne, maxes.squat, wave.setOne)}}</td>
+					</tr>
+					<tr ng-show="wave.wendlerSets">
+						<td>{{calcSets(wave.repTwo, maxes.overheadPress, wave.setTwo)}}</td>
+						<td>{{calcSets(wave.repTwo, maxes.deadlift, wave.setTwo)}}</td>
+						<td>{{calcSets(wave.repTwo, maxes.benchPress, wave.setTwo)}}</td>
+						<td>{{calcSets(wave.repTwo, maxes.squat, wave.setTwo)}}</td>
+					</tr>
+					<tr ng-show="wave.wendlerSets">
+						<td>{{calcSets(wave.repThree, maxes.overheadPress, wave.setThree)}}</td>
+						<td>{{calcSets(wave.repThree, maxes.deadlift, wave.setThree)}}</td>
+						<td>{{calcSets(wave.repThree, maxes.benchPress, wave.setThree)}}</td>
+						<td>{{calcSets(wave.repThree, maxes.squat, wave.setThree)}}</td>
+					</tr>
+				</tbody>
+			</table>
+		</div>
+	</div>
+</div>

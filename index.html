@@ -1,0 +1,81 @@
+<!DOCTYPE html> 
+<html lang="en" ng-app="wendlerCalculator">
+	<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+	<meta name="description" content="">
+	<meta name="author" content="">
+	<!-- <link rel="icon" href="../../favicon.ico"> -->
+
+	<title>Wendler Calculator</title>
+
+	<!-- Bootstrap core CSS -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+	<!-- Custom styles for this template -->
+	<link href="styles/wendler.css" rel="stylesheet">
+
+	</head>
+
+	<body ng-controller = "MesocycleController">
+		<!-- Main input section for setting max 1 rep maxes -->
+		<div class="jumbotron">
+		  <div class="container">
+			<span class="text-primary"><h1>5/3/1 Calculator</h1></span>
+			<p>Wendler training 1 rep maxes:</p>
+			
+			<div class="row">
+				<div class="col-md-3">
+					<label>Overhead Press:</label>
+					<input class="form-control" type="number" min="0" placeholder="weight in lbs" ng-model="maxes.overheadPress"/>
+				</div>
+				<div class="col-md-3">
+					<label>Deadlift:</label>
+					<input class="form-control" type="number" min="0" placeholder="weight in lbs" ng-model="maxes.deadlift"/>
+				</div>
+				<div class="col-md-3">
+					<label>Bench Press:</label>
+					<input class="form-control" type="number" min="0" placeholder="weight in lbs" ng-model="maxes.benchPress"/>
+				</div>
+				<div class="col-md-3">
+					<label>Squat:</label>
+					<input class="form-control" type="number" min="0" placeholder="weight in lbs" ng-model="maxes.squat"/>
+				</div>
+			</div>
+			<p></p>
+			<p>
+				<a class="btn btn-primary" href="#" ng-click="resetMaxes(maxes)" role="button">Clear &raquo;</a>
+			</p>
+
+		  </div>
+		</div>
+
+		<div class="container">
+			<mesocycle></mesocycle>
+			
+			<hr>
+
+			<footer>
+				<p>&copy; 2016 Dope Kiwas</p>
+			</footer>
+		</div> <!-- /container -->
+
+
+		<!-- Bootstrap core JavaScript
+		================================================== -->
+		<!-- Placed at the end of the document so the pages load faster -->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+		<script>window.jQuery || document.write('<script src="../../assets/js/vendor/jquery.min.js"><\/script>')</script>
+		<script src="js/bootstrap.min.js"></script>
+		<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+		<!-- <script src="../../assets/js/ie10-viewport-bug-workaround.js"></script> -->
+		<script src="scripts/app.js" type="text/javascript"></script>
+		<script src="scripts/controllers/wendler.js" type="text/javascript"></script>
+		<script src="scripts/services/data.js" type="text/javascript"></script>
+		<script src="scripts/directives/mesocycle.js" type="text/javascript"></script>
+	</body>
+</html>
